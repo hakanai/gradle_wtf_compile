@@ -1,0 +1,113 @@
+repo_name: hakanai/gradle_wtf_compile
+report_id: 062a67a7bb3969a1734029e053aeff8a
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-11T01:35:28+00:00'
+requested_by: hakanai
+provider: github
+branch: main
+detected_tools_count: 6
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/hakanai/gradle_wtf_compile
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/hakanai/gradle_wtf_compile
+  detection_source: Repo Metadata
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/hakanai/gradle_wtf_compile/blob/main/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Trejkaz (pen name)
+  last_updated_on: 2017-05-31 06:07:19.000000000 Z
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/hakanai/gradle_wtf_compile/blob/main/.travis.yml
+  detection_source: ".travis.yml"
+  last_updated_by: Trejkaz (pen name)
+  last_updated_on: 2017-05-31 06:17:08.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/hakanai/gradle_wtf_compile
+  detection_source: Repo Metadata
+- name: org.apache.logging.log4j:log4j-core
+  description: The Apache Log4j Implementation
+  version: 2.8.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hakanai/gradle_wtf_compile/blob/main/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Trejkaz (pen name)
+  last_updated_on: 2017-05-31 06:42:18.000000000 Z
+  vulnerabilities:
+  - name: Incomplete fix for Apache Log4j vulnerability
+    cve_id: CVE-2021-45046
+    cve_url: https://github.com/advisories/GHSA-7rjr-3q55-vv33
+    detected_date: Dec 14
+    severity: critical
+    first_patched: 2.12.2
+  - name: Remote code injection in Log4j
+    cve_id: CVE-2021-44228
+    cve_url: https://github.com/advisories/GHSA-jfh8-c2jp-5v3q
+    detected_date: Dec 14
+    severity: critical
+    first_patched: 2.12.2
+  - name: Apache Log4j2 vulnerable to Improper Input Validation and Uncontrolled Recursion
+    cve_id: CVE-2021-45105
+    cve_url: https://github.com/advisories/GHSA-p6xc-xr62-6r2g
+    detected_date: Dec 19
+    severity: high
+    first_patched: 2.12.3
+  - name: Improper Input Validation and Injection in Apache Log4j2
+    cve_id: CVE-2021-44832
+    cve_url: https://github.com/advisories/GHSA-8489-44mv-ggj8
+    detected_date: Jan 5
+    severity: moderate
+    first_patched: 2.12.4
+  - name: Improper validation of certificate with host mismatch in Apache Log4j SMTP
+      appender
+    cve_id: CVE-2020-9488
+    cve_url: https://github.com/advisories/GHSA-vwqq-5vrc-xw9h
+    detected_date: Jan 28
+    severity: low
+    first_patched: 2.12.3
